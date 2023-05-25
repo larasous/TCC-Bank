@@ -1,7 +1,10 @@
-body{
+body
+{
     background-color: #7e83bf;
 }
-.Principal{
+
+.principal
+{
     border-radius: 8px;
     text-align: center;
     width: 50%;
@@ -16,7 +19,9 @@ body{
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.Formulario{
+
+.formulario
+{
     width: 50%;
     margin: 40px auto;
     background-color: #6d6d6d;
@@ -29,14 +34,20 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
-#form h3, h3{
-    margin-top:60px;
-}
-#Botoes{
+
+/* #form h3, h3
+{
+    margin-top: 60px;
+} */
+
+
+.botoes
+{
     background-color: #646ed8;
     color: #fff;
 }
-#Botoes:hover{
+
+.botoes:hover{
     background-color: #545cb6;
 
 }

@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/Style.css">
     <title>Cadastro de Bancas</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/validate.js"></script>
+    
 </head>
 <body >
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <div class="Nav">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Nav">
+        <nav class="navbar navbar-expand-lg" id="Nav" style="background-color: #e3f2fd;">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -19,51 +21,59 @@
               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">               
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="Index.html">Home</a>
+                    <a class="nav-link " aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="Cadastrar.html">Cadastrar banca</a>
+                    <a class="nav-link active" href="#">Cadastrar banca</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Bancas.html">Visualizar banca</a>
+                    <a class="nav-link" href="./bancas.html">Visualizar banca</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Sua pesquisa" aria-label="Search">
-                  <button class="btn btn-outline-success" id="Botoes" type="submit">Buscar</button>
+                  <button class="btn btn-outline-success botoes" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
           </nav>
     </div>
-    <div class="Formulario">
-        <h3>Preencha com os dados do aluno</h3>
+    <div class="formulario">
         <form class="row g-3" id="form">
-            <div class="col-12" >
-                <label for="inputAddress" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Nome do aluno">
+          <h3>Preencha com os dados do aluno</h3>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label student-name">Nome</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Nome do aluno" required>
               </div>
             <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="Email do aluno">
+              <label for="inputEmail4" class="form-label email">Email</label>
+              <input type="email" class="form-control" id="Email do aluno" required>
             </div>
             <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Matrícula</label>
-              <input type="text" class="form-control" id="Matricula do aluno">
+              <label for="inputPassword4" class="form-label registration">Matrícula</label>
+              <input type="text" class="form-control" id="Matricula do aluno" required>
             </div>  
             <div class="col-12">
-              <label for="inputAddress2" class="form-label">Curso</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Curso do aluno">
+              <label for="inputAddress2" class="form-label course">Curso</label>
+              <select name="curso" id="curso">
+                <option value="null"></option>
+                <option value="cc">Ciência da Computação</option>
+                <option value="es">Engenharia de Software</option>
+              </select>
             </div>
             <h3>Preencha com os dados do orientador</h3>
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Nome</label>
+                <label for="inputAddress" class="form-label student-advisor">Nome</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="Nome do professor">
             </div>
               <h3>Dados da banca</h3>
               <div class="col-12">
-                <label for="inputAddress" class="form-label">Nome do integrante</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Nome do integrante">
+                <label for="inputAddress" class="form-label">Nome do integrante 1</label>
+                <input type="text" class="form-control" id="inputAddress">
+                <label for="inputAddress" class="form-label">Nome do integrante 2</label>
+                <input type="text" class="form-control" id="inputAddress">
+                <label for="inputAddress" class="form-label">Nome do integrante 3</label>
+                <input type="text" class="form-control" id="inputAddress">
             </div>
               <div class="col-12">
                 <label for="inputAddress" class="form-label">Instituição</label>
@@ -76,7 +86,7 @@
               <h3>Dados da defesa</h3>
               <div class="col-12">
                 <label for="inputAddress2" class="form-label">Título</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Tirulo da defesa">
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Título da defesa">
               </div>
               
               <div class="mb-3">
@@ -92,9 +102,10 @@
               </div>
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary" id="Botoes">Sign in</button>
+              <button type="submit" class="btn btn-primary botoes">Cadastrar</button>
             </div>
           </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
