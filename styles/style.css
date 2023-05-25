@@ -1,25 +1,34 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
 body
 {
     background-color: #7e83bf;
 }
-
-.principal
-{
-    border-radius: 8px;
+.home-center{
+    margin-top: 5%;
+    align-items: center;
     text-align: center;
-    width: 50%;
-    margin: 20% auto auto;
-
-    background-color: #6d6d6d;
-    border: #ffffff10 2px solid;
-    background: #ffffff;
-
-    
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
+.motivacao{
+    width: 70%;
+    margin: 0 auto;
+}
+.bancas-prontas{
+    margin-top: 40px;
 
+}
+.banca{
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+
+}
 .formulario
 {
     width: 50%;
@@ -35,12 +44,6 @@ body
 
 }
 
-/* #form h3, h3
-{
-    margin-top: 60px;
-} */
-
-
 .botoes
 {
     background-color: #646ed8;
@@ -50,5 +53,15 @@ body
 .botoes:hover{
     background-color: #545cb6;
 
+}
+.footer{
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center; */
+    margin-top: auto;
+    transform: translateY(100%);
 }
 

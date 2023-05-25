@@ -40,72 +40,83 @@
     </div>
     <div class="formulario">
         <form class="row g-3" id="form">
-          <h3>Preencha com os dados do aluno</h3>
+          <h3>Dados do aluno</h3>
             <div class="col-12">
                 <label for="inputAddress" class="form-label student-name">Nome</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Nome do aluno" required>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Nome completo" required>
               </div>
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label email">Email</label>
-              <input type="email" class="form-control" id="Email do aluno" required>
+              <input type="email" class="form-control" required>
             </div>
             <div class="col-md-6">
               <label for="inputPassword4" class="form-label registration">Matrícula</label>
-              <input type="text" class="form-control" id="Matricula do aluno" required>
+              <input type="text" class="form-control" required>
             </div>  
             <div class="col-12">
               <label for="inputAddress2" class="form-label course">Curso</label>
-              <select name="curso" id="curso">
+              <select class="form-select" name="curso" id="curso" required>
                 <option value="null"></option>
                 <option value="cc">Ciência da Computação</option>
                 <option value="es">Engenharia de Software</option>
               </select>
             </div>
-            <h3>Preencha com os dados do orientador</h3>
+            <h3>Dados do orientador</h3>
             <div class="col-12">
                 <label for="inputAddress" class="form-label student-advisor">Nome</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Nome do professor">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Nome completo" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label registration">Matrícula</label>
+              <input type="text" class="form-control" required>
             </div>
               <h3>Dados da banca</h3>
               <div class="col-12">
-                <label for="inputAddress" class="form-label">Nome do integrante 1</label>
+                <label for="inputAddress" class="form-label">Avaliador 1</label>
+                <input type="text" class="form-control" id="inputAddress" required>
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" required>
+                
+                <label for="inputAddress" class="form-label">Avaliador 2</label>
                 <input type="text" class="form-control" id="inputAddress">
-                <label for="inputAddress" class="form-label">Nome do integrante 2</label>
-                <input type="text" class="form-control" id="inputAddress">
-                <label for="inputAddress" class="form-label">Nome do integrante 3</label>
-                <input type="text" class="form-control" id="inputAddress">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" required>
             </div>
               <div class="col-12">
                 <label for="inputAddress" class="form-label">Instituição</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Nome da Instituição">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Nome da Instituição" required>
             </div>
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="Email do aluno">
-              </div>
               <h3>Dados da defesa</h3>
               <div class="col-12">
                 <label for="inputAddress2" class="form-label">Título</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Título da defesa">
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Título da defesa" required>
               </div>
               
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Resumo da defesa</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Resumo da defesa"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Resumo da defesa" required></textarea>
               </div>
-              <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Tudo certo
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
+              
+            <div class="col-12 d-flex justify-content-center align-items-center">
               <button type="submit" class="btn btn-primary botoes">Cadastrar</button>
             </div>
           </form>
     </div>
+    <div class="footer" style="background-color: #e3f2fd;">
+      <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+              <li class="nav-item"><a href="./cadastrar.html" class="nav-link px-2 text-body-secondary">Cadastrar</a></li>
+              <li class="nav-item"><a href="./bancas.html" class="nav-link px-2 text-body-secondary">Visualizar</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contate-nos</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+      </footer>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
